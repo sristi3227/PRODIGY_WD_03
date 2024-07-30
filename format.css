@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color:blue;
+    font-family: Arial, sans-serif;
+    font:bold;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.cell.x::before {
+    content: 'X';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+.cell.o::before {
+    content: 'O';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#resetButton{
+    color:rgb(40, 5, 87);
+    background-color: azure;
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 20px;
+
+}
+#resetButton:hover {
+    color:black;
+
+}
